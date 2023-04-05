@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Charity Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  <body>
+    <header>
+      <h1>Welcome to My Charity Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>About Our Charity</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h2>Donate to Our Cause</h2>
+      <form id="donation-form" action="#" method="post">
+        <label for="donation-amount">Donation Amount:</label>
+        <input type="text" id="donation-amount" name="donation-amount"><br>
+        <label for="payment-method">Payment Method:</label>
+        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+        <label for="credit-card">Credit Card</label>
+        <input type="radio" id="paypal" name="payment-method" value="paypal">
+        <label for="paypal">PayPal</label><br>
+        <div id="credit-card-fields">
+          <label for="card-number">Credit Card Number:</label>
+          <input type="text" id="card-number" name="card-number"><br>
+          <label for="card-expiry">Expiration Date:</label>
+          <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY"><br>
+          <label for="card-cvc">CVC:</label>
+          <input type="text" id="card-cvc" name="card-cvc"><br>
+        </div>
+        <button type="submit">Donate Now</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Charity</p>
+    </footer>
+  </body>
+</html>
